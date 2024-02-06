@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>MovieClub</title>
+    <!-- icon -->
+    <link rel="short icon" type="icon" href="images/Movie Night-amico.png" />
+    <!-- bootstrap.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- font awesome css-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/home.css" />
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+        <!-- start small header  -->
+      <div class="hed container-fluid w-100 text-light bg-dark p-2">
+          <div class=" d-flex me-2">
+
+            <a href="./baid.html" class="btn btn-warning ms-2" type="submit">Paid movies</a>
+            
+
+<div class=" m-auto">
+    <h4>
+                    <a class="nav-link m-auto active ms-5" aria-current="page" href="#"
+                    >Home</a
+                  >
+    </h4>
+</div>
+
+
+            <div class="d-flex pb-2 pb-lg-0">
+
+                <input
+                class="form-control me-2 d-none d-md-block"
+                type="search"
+                placeholder="Find your movie"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </div>
+
+
+
+
+            </div>
+
+      </div>
+        <!-- end small header  -->
+
+    <!-- start header -->
+    <header id="#top" class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-dark-subtle p-0 sticky-top">
+        <div class="container-fluid">
+            <a href="./index.html" class="img-h">
+                <img
+                class=" ms-lg-1 ms-3 btn img-fluid p-0"
+                src="images/Movie Night-amico.png"
+                alt=""
+                width="50"
+              />
+          <a
+            class="navbar-brand ms-3 pe-2 border-end border-dark border-2 pr-2"
+            href="#"
+            ><span class="m-logo">Movie</span>Club</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse ms-2"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active ms-2" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+              <li class="nav-item">
+                <a class="nav-link ms-2" aria-current="page" href="./about.html">About</a>
+              </li>
+              <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+              <li class="nav-item">
+                <a class="nav-link ms-2" aria-current="page" href="#movie">movies</a>
+              </li>
+
+
+              <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+              <li class="nav-item">
+                <a class="nav-link ms-2" target="_blank" aria-current="page" href="https://cdn8.mycimaa1.boats/movies/"
+                  ><i
+                    class="fa-solid fa-download ms-1"
+                    style="color: #030e21"
+                  ></i>
+                  Download</a
+                >
+              </li>
+              <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+              <!-- Notifications -->
+
+              <div class="dropdown">
+                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge rounded-pill badge-notification bg-danger"
+                      >1</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">There are no notifications at this time</a></li>
+                </ul>
+              </div>
+
+
+              <!-- \\\\\\\\\\\\\\\\\\\\\ -->
+            </ul>
+
+            <form class="d-flex pb-2 pb-lg-0">
+
+                <a href="./wait.html"
+                class="btn btn-outline-dark ms-2"
+              >
+                Sign up now
+            </a>
+
+
+
+            </form>
+            <button
+            class="btn btn-success ms-2 mb-2 mb-lg-0"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+            >
+            Login
+          </button>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+
+    <div>
+      <a class="top" href="#top"
+        ><i
+          class="fa-solid fa-circle-arrow-up m-auto my-2"
+          style="color: #ffc403; font-size: 60px"
+        ></i
+      ></a>
+      <a class="bott" href="#bott"
+        ><i
+          class="fa-solid fa-circle-arrow-down m-auto my-5"
+          style="color: #ffc403; font-size: 60px"
+        ></i
+      ></a>
+    </div>
+
+    <!-- start main  -->
+    <main>
+      <!-- start sec-1 -->
+      <section class="sec-1">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img
+                  src="images/covar4.jpg"
+                  class="d-block w-100"
+                  height="570"
+                  alt="..."
+                />
+                <div class="carousel-caption d-md-block">
+                  <h2>Black Adam</h2>
+                  <a href="#movie" class="btn btn-warning">Watch Now</a>
+                </div>
+              </div>
+            <!-- \\\\\\\\\\\\\\\\\\\\ -->
+            <div class="carousel-item ">
+              <img
+                src="images/covar1.jpg"
+                class="d-block w-100"
+                height="570"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <h2>Spider Man</h2>
+                <a href="#movie" class="btn btn-info">Watch Now</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/covar2.jpg"
+                class="d-block w-100"
+                height="570"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h2>Avatar</h2>
+                <a href="#movie" class="btn btn-success">Watch Now</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/cover3.jpg"
+                class="d-block w-100"
+                height="570"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h2>Avengers</h2>
+                <a href="#movie" class="btn btn-danger">Watch Now</a>
+              </div>
+            </div>
+
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- end sec-1 -->
+      <!-- start sec-2 -->
+      <section>
+        <div class="text-center py-4 bg-secondary-subtle">
+          <h2 class="sec-1-title">Welcome to the movie club</h2>
+          <p class="text-black-50 mt-4">
+            You will find all new movies and series without any ads, and all of
+            this is free <br />
+            I wish you a pleasant viewing
+          </p>
+          <a href="about.html" class="btn btn-outline-primary">Learn more about Movie Club</a>
+        </div>
+      </section>
+      <hr class="my-3" />
+      <!-- end sec-2 -->
+
+      <!-- start sec-5 -->
+      <section class="sec-5">
+        <div class="img-fixed"></div>
+        <hr class="my-3" />
+        <div id="movie" class="bg-black text-center text-light p-2">
+          <h2>Best 5 star movies</h2>
+        </div>
+        <div
+          class="container-fluid d-flex row justify-content-around justify-content-center p-4 m-0"
+        >
+          <!-- card 1 -->
+          <div
+            class="card mx-2 mt-5 col-12 col-sm-6 col-md-4 col-lg-3"
+            style="width: 16.5rem"
+          >
+            <div id="slide1" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#slide1"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide1"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide1"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active px-1">
+                  <img src="images/sp-m1.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item px-1">
+                  <img src="images/sp-m2.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item px-1">
+                  <img src="images/sp-m3.jpg" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#slide1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#slide1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body text-center">
+              <div class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="card-title py-2">Spider Man</h4>
+              <a target="_blank" href="https://cdn8.mycimaa1.boats/watch/%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-%d9%81%d9%8a%d9%84%d9%85-spider-man-no-way-home-2021-%d9%85%d8%aa%d8%b1%d8%ac%d9%85/" class="btn btn-outline-danger">Watch Now</a>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <!-- card 2 -->
+          <div
+            class="card mx-2 mt-5 col-12 col-sm-6 col-md-4 col-lg-3"
+            style="width: 16.5rem"
+          >
+            <div id="slide2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#slide2"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide2"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide2"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active px-1">
+                  <img
+                    src="images/avng-1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/avng-2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/avng-3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#slide2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#slide2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body text-center">
+              <div class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="card-title py-2">Avengers</h4>
+              <a target="_blank" href="https://cdn8.mycimaa1.boats/watch/%d8%a7%d8%b9%d9%84%d8%a7%d9%86-%d9%81%d9%8a%d9%84%d9%85-avengers-endgame-2019-%d9%85%d8%aa%d8%b1%d8%ac%d9%85/" class="btn btn-outline-dark">Watch Now</a>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <!-- card 3 -->
+          <div
+            class="card mx-2 mt-5 col-12 col-sm-6 col-md-4 col-lg-3"
+            style="width: 16.5rem"
+          >
+            <div id="slide3" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#slide3"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide3"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide3"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active px-1">
+                  <img
+                    src="images/avatar1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/avatar2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/avatar3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#slide3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#slide3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body text-center">
+              <div class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="card-title py-2">Avatar</h4>
+              <a target="_blank" href="https://cdn8.mycimaa1.boats/watch/%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-%d9%81%d9%8a%d9%84%d9%85-avatar-the-way-of-water-2022-%d9%85%d8%aa%d8%b1%d8%ac%d9%85/" class="btn btn-outline-info">Watch Now</a>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <!-- card 4 -->
+          <div
+            class="card mx-2 mt-5 col-12 col-sm-6 col-md-4 col-lg-3"
+            style="width: 16.5rem"
+          >
+            <div id="slide4" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#slide4"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide4"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide4"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active px-1">
+                  <img
+                    src="images/badam1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/badam2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/badam3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#slide4"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#slide4"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body text-center">
+              <div class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="card-title py-2">Black Adam</h4>
+              <a target="_blank" href="https://cdn8.mycimaa1.boats/watch/%d9%81%d9%8a%d9%84%d9%85-black-adam-2022-%d9%85%d8%aa%d8%b1%d8%ac%d9%85-%d8%a7%d9%88%d9%86%d9%84%d8%a7%d9%8a%d9%86/" class="btn btn-outline-warning">Watch Now</a>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <!-- card 5 -->
+          <div
+            class="card mx-2 mt-5 col-12 col-sm-6 col-md-4 col-lg-3"
+            style="width: 16.5rem"
+          >
+            <div id="slide5" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#slide5"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide5"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide5"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active px-1">
+                  <img
+                    src="images/joker1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/joker2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/joker3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#slide5"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#slide5"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body text-center">
+              <div class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="card-title py-2">Joker</h4>
+              <a target="_blank" href="https://cdn8.mycimaa1.boats/watch/%d9%85%d8%b4%d8%a7%d9%87%d8%af%d9%87-%d9%81%d9%8a%d9%84%d9%85-joker-2019-%d9%85%d8%aa%d8%b1%d8%ac%d9%85/" class="btn btn-outline-success">Watch Now</a>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <!-- card 6 -->
+          <div
+            class="card mx-2 mt-5 col-12 col-sm-6 col-md-4 col-lg-3"
+            style="width: 16.5rem"
+          >
+            <div id="slide6" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#slide6"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide6"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide6"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active px-1">
+                  <img
+                    src="images/last ar1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/last ar2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/last ar3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#slide6"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#slide6"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body text-center">
+              <div class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="card-title py-2">Last Airbender</h4>
+              <a target="_blank" href="https://cdn8.mycimaa1.boats/watch/%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-%d9%81%d9%8a%d9%84%d9%85-the-last-airbender-2010-%d9%85%d8%aa%d8%b1%d8%ac%d9%85/" class="btn btn-outline-primary">Watch Now</a>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <!-- card 7 -->
+          <div
+            class="card mx-2 mt-5 col-12 col-sm-6 col-md-4 col-lg-3"
+            style="width: 16.5rem"
+          >
+            <div id="slide7" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#slide7"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide7"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#slide7"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active px-1">
+                  <img
+                    src="images/venom1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/venom2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item px-1">
+                  <img
+                    src="images/venom3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#slide7"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#slide7"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <div class="card-body text-center">
+              <div class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h4 class="card-title py-2">Venom</h4>
+              <a target="_blank" href="https://cdn8.mycimaa1.boats/watch/%d9%85%d8%b4%d8%a7%d9%87%d8%af%d8%a9-%d9%81%d9%8a%d9%84%d9%85-venom-2018-%d9%85%d8%aa%d8%b1%d8%ac%d9%85/" class="btn btn-outline-secondary">Watch Now</a>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        </div>
+        <hr class="my-3" />
+
+        <div class="img2-fixed"></div>
+      </section>
+      <!-- end sec-5 -->
+      <hr class="my-3" />
+
+    </main>
+    <!-- end main  -->
+    <!-- start footer -->
+    <footer id="bott" class="bg-light text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <form>
+          <!--Grid row-->
+          <div class="row justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline">
+                <input type="email" id="form5Example25" class="form-control" />
+                <label class="form-label" for="form5Example25"
+                  >Email address</label
+                >
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </div>
+      <!-- Grid container -->
+      <hr />
+      <div class="container text-center p-2 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-2">
+          <!-- Facebook -->
+          <a
+          target="_blank"
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="https://www.facebook.com/"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+          target="_blank"
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="https://twitter.com/?lang=ar"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+          target="_blank"
+            class="btn text-white btn-floating m-1"
+            style="background-color: #dd4b39"
+            href="https://www.google.com.eg/?hl=ar"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+          target="_blank"
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="https://www.instagram.com/"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+          target="_blank"
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca"
+            href="https://www.linkedin.com/"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+          target="_blank"
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333"
+            href="https://github.com/"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <hr />
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="fs-5 fw-bold mb-4">
+                <i class="btn-link fa-solid fa-clapperboard"></i>MovieClup
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                blanditiis debitis nobis nulla voluptate, sit aliquam
+                perspiciatii excepturi nihil rem quas quasi quos?
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="btn-link">Movies</a>
+              </p>
+              <p>
+                <a href="#!" class="btn-link">Series</a>
+              </p>
+              <p>
+                <a href="#!" class="btn-link">Anime</a>
+              </p>
+              <p>
+                <a href="#!" class="btn-link">More</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="btn-link">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="btn-link">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="btn-link">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="btn-link">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>
+                <a href="#" class="ms-2"
+                  ><i class="btn-link fa-solid fa-house-chimney-user"></i
+                ></a>
+                Egypt, Giza, +20
+              </p>
+              <p>
+                <a href="#" class="ms-2"
+                  ><i class="btn-link fa-solid fa-envelope"></i
+                ></a>
+                info@example.com
+              </p>
+              <p>
+                <a href="#" class="ms-2"
+                  ><i class="btn-link fa-solid fa-phone-volume"></i
+                ></a>
+                + 01 234 567 88
+              </p>
+              <p>
+                <a href="#" class="ms-2"
+                  ><i class="btn-link fa-solid fa-mobile-retro"></i
+                ></a>
+                + 01 234 567 88
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="btn-link" href="#!">BahaaSaber</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- end footer -->
+
+
+
+
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- form   -->
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  ><i class="fa-solid fa-envelope me-1" style="color: #000000;"></i>Email address</label
+                >
+                <input
+                  type="email"
+                  placeholder="example@gmail.com"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3 ">
+                <label for="input-pass" class="form-label"
+                  ><i class="fa-solid fa-lock me-1" style="color: #000000;"></i>Password</label
+                >
+                <input
+                type="password"
+                class="form-control"
+                />
+              </div>
+              <a class="position-absolute pass" href="#">Forget Your Password</a>
+            </form>
+
+            <button type="submit" class="btn btn-outline-primary  my-2">
+              Login
+            </button>
+            <!-- end form -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap.js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome js -->
+    <script src="js/all.min.js"></script>
+    <!-- script.js -->
+    <script src="js/home.js"></script>
+  </body>
+</html>

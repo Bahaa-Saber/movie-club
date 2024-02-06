@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: url(../images/sign.jpg);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+/* start sec1 */
+.sec-1 {
+
+    background-position: center;
+}
+.pass {
+    right: 15px;
+    bottom: 15px;
+}
+
+.img-tr {
+    position: relative;
+}
+
+.img-tr , .img-h{
+    transform: scale(.9);
+    transform:rotate(0deg);
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.img-h {
+    position: relative;
+}
+.img-tr:hover , .img-h:hover{
+    transform: matrix3d(0.94094,-0.34,-0.64,0,0.34,1.19756,-0.17,0,0.64,0.17,0.7546,0,0,0,0,1);
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.521);
+    box-shadow: 5px 5px 20px 10px rgba(119, 119, 119, 0.644);
+}

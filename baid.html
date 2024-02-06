@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>baid</title>
+    <!-- icon -->
+    <link rel="short icon" type="icon" href="images/Movie Night-amico.png" />
+    <!-- bootstrap.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- font awesome css-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/about.css" />
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- add-moveis -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">add a movies</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="card mt-5 bg-light mx-auto">
+            <div class="p-3">
+              <label for="inputtext" class="form-label">Add movie</label>
+
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                style="display: none"
+                id="alrt"
+                role="alert"
+              >
+                <strong>alert!</strong> Please do not forget to enter the
+                product
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div
+                class="alert alert-danger alert-dismissible fade show"
+                style="display: none"
+                id="alrt2"
+                role="alert"
+              >
+                <strong>alert!</strong> Please do not forget to enter the
+                product
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <input
+                type="text"
+                class="form-control"
+                list="datalistOptions"
+                id="inputtext"
+                placeholder="Type to add..."
+              />
+
+              <button class="btn btn-outline-success mt-2" id="btn2">
+                Add this movie
+              </button>
+
+              <datalist id="datalistOptions">
+                <option value="Spider man"></option>
+                <option value="Avatar"></option>
+                <option value="Avengers"></option>
+                <option value="Black Adam"></option>
+              </datalist>
+              
+            </div>
+
+            <div class="ms-4 text-success" id="addpro"></div>
+            <p class="text-black-50">Click on the movie to delete it</p>
+
+            <a id="btn3" href="./index.html" class="my-3 ms-auto me-2">
+              <h2 class="btn btn-outline-info">Save</h2></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- start buttons top&bottom -->
+    <div>
+      <a class="top" href="#top"
+        ><i
+          class="fa-solid fa-circle-arrow-up m-auto my-2"
+          style="color: #ffc403; font-size: 60px"
+        ></i
+      ></a>
+      <a class="bott" href="#bott"
+        ><i
+          class="fa-solid fa-circle-arrow-down m-auto my-5"
+          style="color: #ffc403; font-size: 60px"
+        ></i
+      ></a>
+    </div>
+    <!-- end buttons top&bottom -->
+    <!-- start header -->
+    <header id="#top" class="sticky-top">
+      <!-- start small header -->
+      <div class="hed container-fluid w-100 text-light bg-dark p-2">
+        <div class="d-flex me-2">
+          <button
+            class="btn btn-outline-light"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#staticBackdrop"
+            aria-controls="staticBackdrop"
+          >
+            Add a Movies
+          </button>
+
+          <div class="m-auto">
+            <h4>
+              <a class="nav-link" aria-current="page" href="#">Baid</a>
+            </h4>
+          </div>
+
+          <div class="d-flex pb-2 pb-lg-0">
+            <input
+              class="form-control d-none d-md-block me-2"
+              type="search"
+              placeholder="Find your movie"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </div>
+        </div>
+      </div>
+      <!-- end small header -->
+
+      <nav class="navbar navbar-expand-lg bg-dark-subtle p-0 sticky-top">
+        <div class="container-fluid">
+          <a href="./index.html" class="img-h">
+            <img
+              class="ms-lg-1 ms-3 btn img-fluid p-0"
+              src="images/Movie Night-amico.png"
+              alt=""
+              width="50"
+            />
+          </a>
+          <a
+            class="navbar-brand d-block ms-3 pe-2 border-end border-dark border-2"
+            href="./index.html"
+            ><span class="m-logo">Movie</span>Club</a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse ms-2"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav m-auto pe-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link ms-2" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+              <li class="nav-item">
+                <a class="nav-link ms-2" aria-current="page" href="./about.html"
+                  >About</a
+                >
+              </li>
+
+              <!-- Notifications -->
+
+              <div class="dropdown me-5">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-bell"></i>
+                  <span class="badge rounded-pill badge-notification bg-danger"
+                    >1</span
+                  >
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >There are no notifications at this time</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </ul>
+            <form class="d-flex pb-2 pb-lg-0">
+              <a href="./wait.html" class="btn btn-outline-dark ms-2">
+                Sign up now
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+
+    <main class="secc">
+      <section class="secc1">
+        <div class="text-white text-center pt-5 pb-2">
+          <h1>Movies selection</h1>
+          <p class="text-white-50">More than one movie can be selected</p>
+          <p>
+            To add a new movie, click
+            <a
+              class="btn btn-outline-success"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#staticBackdrop"
+              aria-controls="staticBackdrop"
+              href="#"
+              >here</a
+            >
+          </p>
+        </div>
+
+        <div
+          class="container-fluid addname justify-content-around row m-auto py-4"
+        >
+          <div class="card m-2 text-center p-1" style="width: 12.5rem">
+            <img
+              src="images/avatar1.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </h6>
+              <p class="m-0 text-bg-info">The price is 170 L.E</p>
+              <p class="text-black-50">click button to add</p>
+              <h5 class="btn btn-outline-info" prace="170">Avatar 2023</h5>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <div class="card m-2 text-center p-1" style="width: 12.5rem">
+            <img
+              src="images/avatar3.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </h6>
+              <p class="m-0 text-bg-info">The price is 120 L.E</p>
+              <p class="text-black-50">click button to add</p>
+              <h5 class="btn btn-outline-info" prace="120">Avatar 2019</h5>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <div class="card m-2 text-center p-1" style="width: 12.5rem">
+            <img
+              src="images/avng-2.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </h6>
+              <p class="m-0 text-bg-danger">The price is 199 L.E</p>
+              <p class="text-black-50">click button to add</p>
+              <h5 class="btn btn-outline-danger" prace="199">Avengers 2023</h5>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <div class="card m-2 text-center p-1" style="width: 12.5rem">
+            <img
+              src="images/avng-1.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </h6>
+              <p class="m-0 text-bg-danger">The price is 140 L.E</p>
+              <p class="text-black-50">click button to add</p>
+              <h5 class="btn btn-outline-danger" prace="140">Avengers 2020</h5>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <div class="card m-2 text-center p-1" style="width: 12.5rem">
+            <img
+              src="images/badam1.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </h6>
+              <p class="m-0 text-bg-warning">The price is 240 L.E</p>
+              <p class="text-black-50">click button to add</p>
+              <h5 class="btn btn-outline-warning" prace="240">
+                Black Adam 2023
+              </h5>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <div class="card m-2 text-center p-1" style="width: 12.5rem">
+            <img
+              src="images/badam2.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </h6>
+              <p class="m-0 text-bg-warning">The price is 200 L.E</p>
+              <p class="text-black-50">click button to add</p>
+              <h5 class="btn btn-outline-warning" prace="200">
+                Black Adam 2022
+              </h5>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <div class="card m-2 text-center p-1" style="width: 12.5rem">
+            <img
+              src="images/joker3.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </h6>
+              <p class="m-0 text-bg-success">The price is 109 L.E</p>
+              <p class="text-black-50">click button to add</p>
+              <h5 class="btn btn-outline-success" prace="99">Joker 2021</h5>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <div class="card m-2 text-center p-1" style="width: 12.5rem">
+            <img
+              src="images/joker1.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </h6>
+              <p class="m-0 text-bg-success">The price is 99 L.E</p>
+              <p class="text-black-50">click button to add</p>
+              <h5 class="btn btn-outline-success" prace="99">Joker 2019</h5>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <div class="card m-2 text-center p-1" style="width: 12.5rem">
+            <img
+              src="images/venom1.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </h6>
+              <p class="m-0 text-bg-dark">The price is 79 L.E</p>
+              <p class="text-black-50">click button to add</p>
+              <h5 class="btn btn-outline-dark" prace="79">Venom 2018</h5>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <div class="card m-2 text-center p-1" style="width: 12.5rem">
+            <img
+              src="images/venom2.jpg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h6 class="text-warning">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </h6>
+              <p class="m-0 text-bg-dark">The price is 119 L.E</p>
+              <p class="text-black-50">click button to add</p>
+              <h5 class="btn btn-outline-dark" prace="119">Venom 2021</h5>
+            </div>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        </div>
+        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <div
+          id="div1-hidd"
+          class="div w-50 m-auto text-white text-center mt-4 p-1"
+          style="
+            border: 0px solid #ffffff;
+            border-radius: 15px;
+            font-size: 19px;
+          "
+        ></div>
+        <!-- \\\\\\\\\\\\\\\\\\\ -->
+        <div class="container">
+          <div class="text-center mt-2">
+            <button
+              type="submit"
+              id="btn"
+              class="btn btn-outline-success m-auto"
+              style="display: none"
+            >
+              Show price
+            </button>
+          </div>
+          <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+          <div id="div2-hidd" class="text-center mt-2">
+            <h3
+              id="h3"
+              class="m-auto pb-2 w-25"
+              style="border: 2px solid #0dcaf000; border-radius: 15px"
+            ></h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- start footer -->
+    <footer id="bott" class="bg-light text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <form>
+          <!--Grid row-->
+          <div class="row justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline">
+                <input type="email" id="form5Example25" class="form-control" />
+                <label class="form-label" for="form5Example25"
+                  >Email address</label
+                >
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </div>
+      <!-- Grid container -->
+      <hr />
+      <div class="container text-center p-2 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-2">
+          <!-- Facebook -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #3b5998"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #55acee"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #dd4b39"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #ac2bac"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #0082ca"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+      <hr />
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="btn-link" href="#!">BahaaSaber</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- end footer -->
+
+    <!-- bootstrap.js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome js -->
+    <script src="js/all.min.js"></script>
+    <!-- script.js -->
+    <script src="js/home.js"></script>
+  </body>
+</html>
